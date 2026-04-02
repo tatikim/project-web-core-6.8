@@ -1,1 +1,1 @@
-# project-web-core-6.8
+## Project link  [Открыть проект](https://tatikim.github.io/project-web-core-6.8/)
