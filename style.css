@@ -93,11 +93,14 @@ header {
   padding: 30px 5px;
   border-top: #41F6D7 0.5px solid;
 }
+
 .services__text {
   display: flex;
   flex-direction: column;
 }
-
+.services__icon {
+  display: none;
+}
 .services__title {
   padding-left: 15px;
   font-size: 25px;
@@ -136,7 +139,7 @@ header {
   padding-left: 30px;
   border: none;
   cursor: pointer;
-  background-image: url('/ic/expand.svg');
+  background-image: url('/expand.svg');
   background-repeat: no-repeat;
   background-position: left;
   font-size: 17px;
@@ -222,37 +225,46 @@ header {
   .page {
     max-width: 1024px;
   }
-  .header__iconleft {
+  .header{
     display: none;
   }
-  .header__logo {
-    display: none;
-  }
-  .header__iconmiddle {
-    display: none;
-  }
-  .header__iconright__text {
+  .services {
+  border-top: none;
+}
+.title-ic {
+ display: flex;
+gap: 16px;
+padding-right: 20px;
+}
+.services__title {
+padding-left: 20px;
+}
+
+.services__icon {
+  display: flex;
+  flex: 1;
+  justify-content: flex-end;
+  gap: 16px;
+}
+
+.services__icon--repair {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #FF3E79;
+  border: none;
+  outline: none;
+}
+.services__icon__text {
   display: flex;
   align-items: center;
-  justify-content: center;
-}
-.header__iconright {
-  position: relative;
-}
-.header__iconright::before {
-  content: "";
-  width: 2px;
-  height: 32px;
-  background: #EAEAEA;
-  position: absolute;
-  left: 580px;
-  top: 50%;
-  transform: translateY(-50%);
+  gap: 8px;
 }
 .services__content {
    display: flex;
    gap: 16px;
 }
+
   .services__contentdesktop {
     display: flex;
      flex: 1;
